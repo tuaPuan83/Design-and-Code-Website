@@ -8,6 +8,7 @@
 
 :root {
     --seared-grey: #495057;
+    --white: #fff;
 }
 
 
@@ -40,6 +41,12 @@ img {
 
 .container-sm {
     max-width: 1000px;
+}
+
+/* Hero Section */
+.hero {
+    background-color: var(--white);
+    min-height: 100vh;
 }
 
 /* Navbar Section */
@@ -136,6 +143,8 @@ img {
     gap: 3rem;
     font-size: 1.4rem;
 }
+
+
 
 /* Media Queries */
 
