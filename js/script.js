@@ -9,3 +9,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
     
 })
+
+// Change navbar bg on scroll
+window.addEventListener('scroll', function() {
+
+    const navbar = document.querySelector('.navbar')
+
+    if(window.scrollY > 0) {
+        navbar.classList.add('navbar-scroll')
+    } else {
+        navbar.classList.remove('navbar-scroll')
+    }
+})
+
+window.addEventListener('scroll', function() {
+    const mobileMenu = document.querySelector('.navbar .mobile-menu-items');
+
+    if(window.scrollY > 0) {
+        mobileMenu.classList.remove('active');
+    } 
+})
